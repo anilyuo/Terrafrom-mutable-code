@@ -31,6 +31,8 @@ If the plan looks correct, apply the changes by running terraform apply.
 Terraform will provision the entire infrastructure based on the configurations defined in the code. This includes creating the VPC, subnets, security groups, load balancer, target group, and auto scaling group. The auto scaling group will launch instances based on the specified AMI image.
 # AMI Images
 In this project, we're using custom AMI images that have been pre-configured with the necessary software and configurations. These AMI images can be created manually or through automation tools like Packer.
+### Note: further AMI Life cycle management reading 
+https://www.virtana.com/blog/aws-ami-management/
 By using pre-configured AMI images, we can ensure that all instances launched within the auto scaling group are consistent and meet our desired specifications. This approach simplifies the deployment process and reduces the risk of configuration drift.
 # Cleanup
 To remove the provisioned infrastructure, run terraform destroy. This will delete all the resources created by Terraform, including the VPC, subnets, security groups, load balancer, target group, and auto scaling group.
